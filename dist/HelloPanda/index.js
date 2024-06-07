@@ -23,11 +23,11 @@ const run = function (context, req) {
             headers: {
                 "content-type": "text/html"
             },
-            body: formatContent(url, fact)
+            body: renderBody(url, fact)
         };
     });
 };
-function formatContent(url, fact) {
+function renderBody(url, fact) {
     return `<center>
                 <img height="80%" src="${url}"/>
                 <h3>${fact}</h3>
